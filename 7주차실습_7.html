@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>별 문자 출력하기</title>
+    <script>
+        function printStar(n){
+            
+            if(n>=0)
+            {
+                for(i=1;i<=n;i++){
+                    for(j=1;j<=i;j++){
+                        document.write("*");
+                    }
+                    document.write("<br>")
+                }
+            }
+            else{
+                document.write("입력 오류입니다");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h3>별 문자 출력하기</h3>
+    <hr>
+    <script>
+       var n = prompt("정수를 입력하세요");
+       printStar(n);
+    </script>
+</body>
+
+</html>
